@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context="vvv.mailsender.MainActivity">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"/>
+
+    <EditText
+        android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"/>
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Best regards\nSent from android"
+        android:hint="Message"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/cb_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Attach image"/>
+
+    <CheckBox
+        android:id="@+id/cb_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Attach document"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipients"/>
+
+    <EditText
+        android:id="@+id/et_recipients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:text="test201803231428@gmail.com,\ntest201803231428@mail.ru,\ntest201803231428@yandex.ru"/>
+        android:hint="Addresses comma separated"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/action_send_via_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send via GMAIL account" />
+
+        <Button
+            android:id="@+id/action_send_via_mailru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send via MAILRU account" />
+
+        <Button
+            android:id="@+id/action_send_via_yandex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send via YANDEX account" />
+
+    </LinearLayout>
+</LinearLayout>
